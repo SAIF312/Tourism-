@@ -1,0 +1,51 @@
+.btn:link, .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+  
+  .btn::after
+   {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    position: absolute;
+    background-color: #f6f3f3;
+    top: 0px;
+    left: 0px;
+    border-radius: 100px;
+    z-index: -1;
+    transition: all .4s; }
+  
+  .btn_white {
+    font-size: 2rem;
+    background-color: #ffffff;
+    color: #777;
+    margin-top: 10%; }
+
+    .btn_green{
+        font-size: 2rem;
+        background-color: $p-dark-color;
+        color: $white-color;
+        margin-top: 10%;
+    }
+    .btn_green::after{
+        color: $p-color-light;
+        background-color: $p-dark-color;
+    }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4); }
+    .btn:hover::after {
+      transform: scalex(1.4) scaleY(1.6);
+      opacity: 0; }
+  
+  .btn:active {
+    transform: translateY(-1px); 
+}

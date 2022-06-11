@@ -1,0 +1,78 @@
+.login {
+    height: 100vh;
+    background-image:linear-gradient(to right,rgba($white-color, .8) , rgba($t-color-dark, .4)), url(harley-davidson-BW9ki_tmouE-unsplash.jpg);
+    position: relative;
+    background-size: cover;
+    z-index: 100;
+    opacity: 1;
+
+    &_box {
+            background-image: linear-gradient(to right, rgba($p-dark-color , .7)40%, rgba($white-color, 0.8)40%);
+            width:80% ;
+            height:80%;
+            padding: 6rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            border-radius: 10px;
+            box-shadow: 0 3rem 4rem rgba($color: #000000, $alpha: 0.6);
+    }
+    &_signin{
+        text-align: center;
+        width: 40%;
+        color: $white-color;
+        margin-right: 4rem;
+        &--heading--1{
+            font-size: 4rem;
+            font-weight: 700;
+            letter-spacing: .5rem;
+            text-transform: uppercase;
+            margin-top: 50%;
+            transform: translateY(-50%);
+        }
+        &--heading--2{
+            font-size: 1.3rem;
+            font-weight: 400;
+            letter-spacing: .4rem;
+            text-transform: uppercase;
+            margin-top: 3rem;
+        }
+    }
+}
+.caccount{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50% , -50%);
+    &--heading {
+        background-image: linear-gradient(to right, $p-color-light, $p-dark-color);
+        width: 100%;
+        letter-spacing: .12rem;
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: transparent;
+        font-weight: 700;
+        margin-bottom: 10%;
+        -webkit-background-clip: text;
+    }
+    & input{
+        padding: 1.2rem;
+        font-size: 1.7rem;
+        border-radius: 3px;
+        color: $grey-color;
+        border: none;
+        background-color:rgba($white-color, .7);
+        margin-top: 4rem;
+        width: 100%;
+        border-bottom: 2px solid $p-color-light;
+        outline: none;
+    }
+}
+.input:placeholder-shown:invalid{
+    border-bottom: 2px solid rgba(orangered, 0.5);
+}
+.input::placeholder {
+    color: $input;
+}
